@@ -1,16 +1,21 @@
-var x:string = process.argv[2];
-var num:number = parseInt(x);
-Tree(num);
+var x:number = Get();
+Tree(x);
 
 
-function Tree (x:number){
+function Get ():number {
+    var x:string = process.argv[2];
+    var num:number = parseInt(x);
+    return num;
+}
+
+function Tree (x:number):void {
     var line, spaNum, starNum:number;
     var star, space:string;
 
-    for(line=0; line<num; line++){
+    for(line=0; line<x; line++){
         star = "";
         space = "";
-        for(spaNum=0; spaNum<(num-line-1); spaNum++){
+        for(spaNum=0; spaNum<(x-line-1); spaNum++){
             space = space + " ";
         }
         for(starNum=0; starNum<(2*line+1); starNum++){
@@ -19,4 +24,3 @@ function Tree (x:number){
         console.log(space + star);
     }
 }
-
