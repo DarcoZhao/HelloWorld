@@ -70,7 +70,7 @@
 
 
 喜欢的男孩子：
-![Z](http://img2.selfimg.com.cn/mself600w/2015/04/02/1427964189_GC47Vm.jpg)
+![Z](http://s3.sinaimg.cn/orignal/57560ac3gcf4dd9fe0da2&690)
 
 
 ##完
