@@ -1,11 +1,11 @@
 var x = Get();
-Tree(x);
+BuildTree(x);
 function Get() {
     var x = process.argv[2];
     var num = parseInt(x);
     return num;
 }
-function Tree(x) {
+function BuildTree(x) {
     var line, spaNum, starNum;
     var star, space;
     for (line = 0; line < x; line++) {

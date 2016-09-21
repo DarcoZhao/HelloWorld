@@ -1,4 +1,4 @@
-var x:number = Get();
+var x = Get();
 BuildTree(x);
 
 
