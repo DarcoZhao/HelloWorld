@@ -1,5 +1,5 @@
 var x:number = Get();
-Tree(x);
+BuildTree(x);
 
 
 function Get ():number {
@@ -8,7 +8,7 @@ function Get ():number {
     return num;
 }
 
-function Tree (x:number):void {
+function BuildTree (x:number):void {
     var line, spaNum, starNum:number;
     var star, space:string;
 
