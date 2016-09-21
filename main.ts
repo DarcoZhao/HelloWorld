@@ -1,21 +1,18 @@
-var x = Get();
-BuildTree(x);
+
+BuildTree();
 
 
-function Get ():number {
-    var x:string = process.argv[2];
-    var num:number = parseInt(x);
-    return num;
-}
+function BuildTree ():void {
+    var inputNum:string = process.argv[2];
+    var linenum:number = parseInt(inputNum);
 
-function BuildTree (x:number):void {
     var line, spaNum, starNum:number;
     var star, space:string;
 
-    for(line=0; line<x; line++){
+    for(line=0; line<linenum; line++){
         star = "";
         space = "";
-        for(spaNum=0; spaNum<(x-line-1); spaNum++){
+        for(spaNum=0; spaNum<(linenum-line-1); spaNum++){
             space = space + " ";
         }
         for(starNum=0; starNum<(2*line+1); starNum++){
